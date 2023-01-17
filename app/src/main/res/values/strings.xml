@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="new_game_btn">New Game</string>
+    <string name="continue_btn">Continue Previous</string>
+    <string name="top_results_btn">Results TOP10</string>
+    <string name="give_up_btn">I give up!</string>
+    <string name="back_btn">Go back</string>
+    <string name="ok_btn">OK</string>
+    <string name="close_btn">Close</string>
+    <string name="game_txt">Game </string>
+    <string name="continue_txt"> continue</string>
+    <string name="select_game_dialog_title">Select Game</string>
+    <string name="difficulty_dialog_title">Select Difficulty</string>
+    <string name="new_game_started_toast">New game started</string>
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Expert</item>
+    </string-array>
+</resources>
