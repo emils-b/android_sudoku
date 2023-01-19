@@ -7,6 +7,7 @@
     tools:context=".GameActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:background="#CFD3E8"
@@ -20,7 +21,7 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -29,11 +30,89 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
+            android:id="@+id/input30"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input20"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input40"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input30"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input50"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input40"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input60"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input50"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input70"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input60"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input80"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input70"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
             android:id="@+id/input21"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -42,16 +121,172 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
+            android:id="@+id/input31"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input30"
+            app:layout_constraintTop_toBottomOf="@+id/input21"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input41"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input40"
+            app:layout_constraintTop_toBottomOf="@+id/input31"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input51"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input50"
+            app:layout_constraintTop_toBottomOf="@+id/input41"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input61"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input60"
+            app:layout_constraintTop_toBottomOf="@+id/input51"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input71"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input70"
+            app:layout_constraintTop_toBottomOf="@+id/input61"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input81"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input80"
+            app:layout_constraintTop_toBottomOf="@+id/input71"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
             android:id="@+id/input22"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/input21"
             app:layout_constraintTop_toBottomOf="@+id/input12"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input32"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input31"
+            app:layout_constraintTop_toBottomOf="@+id/input22"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input42"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input41"
+            app:layout_constraintTop_toBottomOf="@+id/input32"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input52"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input51"
+            app:layout_constraintTop_toBottomOf="@+id/input42"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input62"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input61"
+            app:layout_constraintTop_toBottomOf="@+id/input52"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input72"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input71"
+            app:layout_constraintTop_toBottomOf="@+id/input62"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input82"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input81"
+            app:layout_constraintTop_toBottomOf="@+id/input72"
             app:layout_constraintVertical_bias="0.0" />
 
         <View
@@ -102,7 +337,7 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -111,11 +346,674 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
+            android:id="@+id/input03"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input02"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input13"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input12"
+            app:layout_constraintTop_toBottomOf="@+id/input03"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input23"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input22"
+            app:layout_constraintTop_toBottomOf="@+id/input13"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input33"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input32"
+            app:layout_constraintTop_toBottomOf="@+id/input23"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input43"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input42"
+            app:layout_constraintTop_toBottomOf="@+id/input33"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input53"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input52"
+            app:layout_constraintTop_toBottomOf="@+id/input43"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input63"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input62"
+            app:layout_constraintTop_toBottomOf="@+id/input53"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input73"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input72"
+            app:layout_constraintTop_toBottomOf="@+id/input63"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input83"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input82"
+            app:layout_constraintTop_toBottomOf="@+id/input73"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input24"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input23"
+            app:layout_constraintTop_toBottomOf="@+id/input14"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input34"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input33"
+            app:layout_constraintTop_toBottomOf="@+id/input24"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input44"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input43"
+            app:layout_constraintTop_toBottomOf="@+id/input34"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input54"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input53"
+            app:layout_constraintTop_toBottomOf="@+id/input44"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input64"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input63"
+            app:layout_constraintTop_toBottomOf="@+id/input54"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input74"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input73"
+            app:layout_constraintTop_toBottomOf="@+id/input64"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input84"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input83"
+            app:layout_constraintTop_toBottomOf="@+id/input74"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input25"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input24"
+            app:layout_constraintTop_toBottomOf="@+id/input15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input35"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input34"
+            app:layout_constraintTop_toBottomOf="@+id/input25"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input45"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input44"
+            app:layout_constraintTop_toBottomOf="@+id/input35"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input55"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input54"
+            app:layout_constraintTop_toBottomOf="@+id/input45"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input65"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input64"
+            app:layout_constraintTop_toBottomOf="@+id/input55"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input85"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input84"
+            app:layout_constraintTop_toBottomOf="@+id/input75"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input75"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input74"
+            app:layout_constraintTop_toBottomOf="@+id/input65"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input26"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input25"
+            app:layout_constraintTop_toBottomOf="@+id/input16"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input36"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input35"
+            app:layout_constraintTop_toBottomOf="@+id/input26"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input46"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input45"
+            app:layout_constraintTop_toBottomOf="@+id/input36"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input56"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input55"
+            app:layout_constraintTop_toBottomOf="@+id/input46"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input66"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input65"
+            app:layout_constraintTop_toBottomOf="@+id/input56"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input76"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input75"
+            app:layout_constraintTop_toBottomOf="@+id/input66"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input86"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input85"
+            app:layout_constraintTop_toBottomOf="@+id/input76"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input27"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input26"
+            app:layout_constraintTop_toBottomOf="@+id/input17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input37"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input36"
+            app:layout_constraintTop_toBottomOf="@+id/input27"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input47"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input46"
+            app:layout_constraintTop_toBottomOf="@+id/input37"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input57"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input56"
+            app:layout_constraintTop_toBottomOf="@+id/input47"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input67"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input66"
+            app:layout_constraintTop_toBottomOf="@+id/input57"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input77"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input76"
+            app:layout_constraintTop_toBottomOf="@+id/input67"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input87"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input86"
+            app:layout_constraintTop_toBottomOf="@+id/input77"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input28"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input27"
+            app:layout_constraintTop_toBottomOf="@+id/input18"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input38"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input37"
+            app:layout_constraintTop_toBottomOf="@+id/input28"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input48"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input47"
+            app:layout_constraintTop_toBottomOf="@+id/input38"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input58"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input57"
+            app:layout_constraintTop_toBottomOf="@+id/input48"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input68"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input67"
+            app:layout_constraintTop_toBottomOf="@+id/input58"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input78"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input77"
+            app:layout_constraintTop_toBottomOf="@+id/input68"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input88"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input87"
+            app:layout_constraintTop_toBottomOf="@+id/input78"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input14"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input13"
+            app:layout_constraintTop_toBottomOf="@+id/input04"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input15"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input14"
+            app:layout_constraintTop_toBottomOf="@+id/input05"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input16"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input15"
+            app:layout_constraintTop_toBottomOf="@+id/input06"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input17"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input16"
+            app:layout_constraintTop_toBottomOf="@+id/input07"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input18"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input17"
+            app:layout_constraintTop_toBottomOf="@+id/input08"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input04"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input03"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input05"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input04"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
             android:id="@+id/input01"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -128,7 +1026,7 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -141,7 +1039,7 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -154,7 +1052,7 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -167,12 +1065,51 @@
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/input11"
             app:layout_constraintTop_toBottomOf="@+id/input02"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input06"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/input05"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input07"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input06"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/input08"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/input07"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -74,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO izveidot iesākto spēļu ieguvi no Shared preferences
-                // TODO izskatās, ka var glabāt tikai String vai int. Šajā gadījumā masīvs mirs glabāšanas jāpārveido par JSON
-                // TODO un pēc atgūsānas atpakaļ uz masīvu (https://stackoverflow.com/questions/3876680/is-it-possible-to-add-an-array-or-object-to-sharedpreferences-on-android)
+                // TODO create started game retrieval from Shared preferences
+                //  looks like String or int can be stored. In this case array should be changed to JSON and stored as string
+                //  and after retrieval changed back to array (https://stackoverflow.com/questions/3876680/is-it-possible-to-add-an-array-or-object-to-sharedpreferences-on-android)
                 String[] startedGames = {};
 
                 AlertDialog dialog = new AlertDialog.Builder(MainActivity.this)
@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         dialog.dismiss();
-                        int selectedGame = ((AlertDialog) dialog).getListView().getCheckedItemPosition();
-                        //TODO selectedGame jāsaglabā Shared preferences, lai spēles skatā varētu uzlikt
+                        int selectedGame = dialog.getListView().getCheckedItemPosition();
+                        //TODO selectedGame should be stored in Shared preferences, to retrieve it in GameActivity
 
                         Toast toast = Toast.makeText(MainActivity.this, R.string.game_txt + " " + startedGames[selectedGame] + " " + R.string.continue_txt, Toast.LENGTH_SHORT);
                         toast.show();
