@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
 
 public class GameActivity extends AppCompatActivity {
@@ -15,12 +17,6 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
-
-        /*
-        TODO methods which will be used
-         .setText() adds text value to field. Will be needed to populate with generated values. Only needs to block user entries for these fields
-         .getText().toString() gets user input value from field
-        */
 
         // all input fields for game
         // 1st row
@@ -122,6 +118,29 @@ public class GameActivity extends AppCompatActivity {
         EditText input87 = findViewById(R.id.input87);
         EditText input88 = findViewById(R.id.input88);
 
+        /*
+        TODO methods which will be used
+         .setText() adds text value to field. Will be needed to populate with generated values. Only needs to block user entries for these fields
+         .getText().toString() gets user input value from field
+        */
 
+        // TODO Probably could use addTextChangedListener() to catch when user enters value.
+        //  Only need to enable for inputs where is there is not automatically generated values
+        input00.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
     }
 }
