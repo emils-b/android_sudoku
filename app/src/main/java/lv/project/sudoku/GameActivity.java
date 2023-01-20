@@ -118,6 +118,18 @@ public class GameActivity extends AppCompatActivity {
         EditText input87 = findViewById(R.id.input87);
         EditText input88 = findViewById(R.id.input88);
 
+        EditText[][] inputsGroupedInRows = {
+                {input00, input01, input02, input03, input04, input05, input06, input07, input08},
+                {input10, input11, input12, input13, input14, input15, input16, input17, input18},
+                {input20, input21, input22, input23, input24, input25, input26, input27, input28},
+                {input30, input31, input32, input33, input34, input35, input36, input37, input38},
+                {input40, input41, input42, input43, input44, input45, input46, input47, input48},
+                {input50, input51, input52, input53, input54, input55, input56, input57, input58},
+                {input60, input61, input62, input63, input64, input65, input66, input67, input68},
+                {input70, input71, input72, input73, input74, input75, input76, input77, input78},
+                {input80, input81, input82, input83, input84, input85, input86, input87, input88},
+        };
+
         /*
         TODO methods which will be used
          .setText() adds text value to field. Will be needed to populate with generated values. Only needs to block user entries for these fields
