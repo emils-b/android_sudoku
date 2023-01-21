@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        //TODO create result data import from sharedPrefs
+        SharedPreferences sharedPref = this.getSharedPreferences("GameActivity",Context.MODE_PRIVATE);
         
         Button btnNewGame = findViewById(R.id.newGameBtn);
         btnNewGame.setText(R.string.new_game_btn);
@@ -57,15 +57,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
-                        //TODO atgriež indexu (int vērtība). Mož pēc indexa tad jāiegūst no strings.xml difficulty masīva teksta vērtība un tad ifā var noteikt grūtības pakāpi.
                         int selectedDifficulty = dialog.getListView().getCheckedItemPosition();
-                        SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putInt(DIFFICULTY_KEY, selectedDifficulty);
-                        editor.apply();
-
                         Toast toast = Toast.makeText(MainActivity.this, R.string.new_game_started_toast, Toast.LENGTH_SHORT);
                         toast.show();
-                        startActivity(new Intent(MainActivity.this, GameActivity.class));
+                        Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                        intent.putExtra("level",selectedDifficulty);
+                        startActivity(intent);
                     }
                 });
             }

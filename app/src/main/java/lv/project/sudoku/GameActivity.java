@@ -4,19 +4,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.Gravity;
 import android.widget.EditText;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class GameActivity extends AppCompatActivity {
+
+    EditText[][] boardLayout;
+    int[][] board;
+    Random rand;
+    int K,N;
+    int SRN;
+
+    public GameActivity() {
+        this.N = 9;
+        Double SRNd = Math.sqrt(N);
+        SRN = SRNd.intValue();
+        board = new int[N][N];
+        rand = new Random();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
-        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
 
         // all input fields for game
         // 1st row
@@ -118,7 +137,7 @@ public class GameActivity extends AppCompatActivity {
         EditText input87 = findViewById(R.id.input87);
         EditText input88 = findViewById(R.id.input88);
 
-        EditText[][] inputsGroupedInRows = {
+        this.boardLayout = new EditText[][]{
                 {input00, input01, input02, input03, input04, input05, input06, input07, input08},
                 {input10, input11, input12, input13, input14, input15, input16, input17, input18},
                 {input20, input21, input22, input23, input24, input25, input26, input27, input28},
@@ -129,6 +148,26 @@ public class GameActivity extends AppCompatActivity {
                 {input70, input71, input72, input73, input74, input75, input76, input77, input78},
                 {input80, input81, input82, input83, input84, input85, input86, input87, input88},
         };
+
+        for (int i = 0; i<9; i++) {
+            for (int j = 0; j < 9; j++) {
+                boardLayout[i][j].setGravity(Gravity.CENTER | Gravity.BOTTOM);
+                boardLayout[i][j].setTextColor(Color.BLACK);
+                boardLayout[i][j].setTextSize(12);
+            }
+        }
+
+        Bundle levels = getIntent().getExtras();
+        int level = levels.getInt("level");
+        if (level == 0) {
+            K = 20;
+        } else if (level == 1) {
+            K = 30;
+        } else { K = 50;}
+
+        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        generate();
+        Log.d("gameBoard",Arrays.deepToString(board));
 
         /*
         TODO methods which will be used
@@ -154,5 +193,151 @@ public class GameActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void generate() {
+
+        // Fill diagonal 3x3 squares with random numbers
+        fillDiagonal();
+
+        // Fill remaining cells
+        fillRemaining(0,SRN);
+
+        //remove digits
+        removeKDigits();
+
+        //insert generated board data into game layout
+        updateBoardLayout();
+    }
+
+    private void updateBoardLayout() {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] == 0) {
+                    boardLayout[i][j].setText("");
+                } else {boardLayout[i][j].setText(String.valueOf(board[i][j]));}
+            }
+        }
+    }
+
+    private void fillDiagonal () {
+        for (int i = 0; i < N; i=i+SRN) {
+            fillSquare(i,i);
+
+        }
+    }
+
+    private void fillSquare(int row, int col) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                int num;
+                do {
+                    num = rand.nextInt(9) + 1;
+                } while (!isValid(row + i, col + j, num));
+                board[row + i][col + j] = num;
+            }
+        }
+    }
+
+    int randomGenerator(int num)
+    {
+        return (int) Math.floor((Math.random()*num+1));
+    }
+
+    boolean fillRemaining(int i, int j)
+    {
+        //  System.out.println(i+" "+j);
+        if (j>=N && i<N-1)
+        {
+            i = i + 1;
+            j = 0;
+        }
+        if (i>=N && j>=N)
+            return true;
+
+        if (i < SRN)
+        {
+            if (j < SRN)
+                j = SRN;
+        }
+        else if (i < N-SRN)
+        {
+            if (j==(int)(i/SRN)*SRN)
+                j =  j + SRN;
+        }
+        else
+        {
+            if (j == N-SRN)
+            {
+                i = i + 1;
+                j = 0;
+                if (i>=N)
+                    return true;
+            }
+        }
+
+        for (int num = 1; num<=N; num++)
+        {
+            if (isValid(i, j, num))
+            {
+                board[i][j] = num;
+                if (fillRemaining(i, j+1))
+                    return true;
+
+                board[i][j] = 0;
+            }
+        }
+        return false;
+    }
+
+    private boolean isValid(int row, int col, int num) {
+        // Check row
+        for (int i = 0; i < 9; i++) {
+            if (board[row][i] == num) {
+                return false;
+            }
+        }
+
+        // Check column
+        for (int i = 0; i < 9; i++) {
+            if (board[i][col] == num) {
+                return false;
+            }
+        }
+
+        // Check 3x3 square
+        int squareRow = row - row % 3;
+        int squareCol = col - col % 3;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[squareRow + i][squareCol + j] == num) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public void removeKDigits()
+    {
+        int count = K;
+        while (count != 0)
+        {
+            //generate random cell id
+            int cellId = randomGenerator(N*N)-1;
+
+            // extract coordinates i  and j
+            int i = (cellId/N);
+            int j = cellId%9;
+            if (j != 0)
+                j = j - 1;
+
+            if (board[i][j] != 0)
+            {
+                count--;
+                board[i][j] = 0;
+            }
+        }
     }
 }
